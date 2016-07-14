@@ -4,6 +4,7 @@ public class Array_Index_Equal_to_Content {
 		System.out.println("Enter the size of an Array:");
 		Scanner in=new Scanner(System.in);
 		int n=in.nextInt();
+		int a=0;
 		int arr[]=new int[n];
 		System.out.println("Enter the Elements of an Array:");
 		for(int i=0;i<n;i++){
@@ -19,10 +20,14 @@ public class Array_Index_Equal_to_Content {
 		for(int count=0;count<n;count++){
 			if(arr[count]==count){
 				System.out.print(arr[count]+" ");
+				a++;
 			}
 			else{
 				continue;
 			}
+		}
+		if(a==0){
+			System.out.println("Nothing");
 		}
 	}
 
