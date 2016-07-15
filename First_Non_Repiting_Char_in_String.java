@@ -9,7 +9,10 @@ public class First_Non_Repiting_Char_in_String {
 		char non=c[0];
 		int count=0;
 		System.out.println("The First Non Repiting Char in the given String: ");
-		for(int i=1;i<c.length;i++){
+		for(int counting=0;counting<c.length;counting++){
+			count=0;
+			non=c[counting];
+		for(int i=counting+1;i<c.length;i++){
 			if(non==c[i]){
 				c[i]='@';
 				count++;
@@ -20,7 +23,8 @@ public class First_Non_Repiting_Char_in_String {
 			
 			}
 		if(count>0){
-			c[0]='@';
+			c[counting]='@';
+		}
 		}
 		for(int j=0;j<c.length;j++){
 			if(c[j]=='@'){
