@@ -8,11 +8,12 @@ public class Deleting_K_Largest_Digits {
 		System.out.println("Enter the digit k");
 		int k=in.nextInt();
 		in.close();
-		int count=0;
+		int count;
 		char c[]=str.toCharArray();	
 		for(int i=0;i<k;i++){
 			int j=0;
 			int largest=c[0];
+			count=0;
 		for(j=0;j<c.length;j++){
 			if(largest<c[j]){
 				largest=c[j];
