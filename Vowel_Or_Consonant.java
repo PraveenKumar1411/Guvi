@@ -5,7 +5,8 @@ public class Vowel_Or_Consonant {
 	   Scanner in=new Scanner(System.in);
 	   int count=0;
 	   char c = in.next().charAt(0);
-	   char vowel[]={'a', 'e','i', 'o', 'u'}; 
+	   char vowel[]={'a', 'e','i', 'o', 'u'};
+	   //char array to store the vowels
 	   for(int i=0;i<=4;i++){
 		   if(c==vowel[i]){
 			  
